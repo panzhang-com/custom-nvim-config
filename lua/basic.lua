@@ -81,3 +81,5 @@ vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 -- always show tabline
 vim.o.showtabline = 2
+-- 显示隐藏文件
+vim.g.NRTDTreeShowHidden = 1

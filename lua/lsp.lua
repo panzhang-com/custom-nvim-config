@@ -20,6 +20,11 @@ lspconfig.tsserver.setup({
     filetype = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
 })
 
+-- 挂载pyright lsp服务器
+lspconfig.pyright.setup({
+    cmd = { nvim_data_path .. "\\lsp_servers\\pyright\\node_modules\\.bin\\pyright-langserver.cmd", "--stdio" },
+})
+
 -- 配置快捷键绑定
 local keymap = vim.api.nvim_set_keymap
 local opt = { noremap = true, silent = true }

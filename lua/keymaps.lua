@@ -8,3 +8,7 @@ vim.g.maplocalleader = " "
 keymap("n", "<A-j>", "9j", opt)
 keymap("n", "<A-k>", "9k", opt)
 
+-- 切换缓冲区
+keymap("n", "<A-h>", "<C-w>h", opt)
+keymap("n", "<A-l>", "<C-w>l", opt)
+

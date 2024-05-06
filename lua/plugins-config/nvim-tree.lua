@@ -9,4 +9,8 @@ vim.opt.termguicolors = true
 vim.api.nvim_set_keymap("n", "<A-e>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
 -- 导入nvim-tree
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+    git = {
+        enable = false
+    }
+})
